@@ -33,7 +33,7 @@ ac-predictor最新完美汉化版，在 AtCoder 比赛进行中进行rating变�
 
 #### 方法1：使用 GreasyFork 安装脚本（推荐）
 
-打开[链接]([https://greasyfork.org/zh-CN/scripts/458528-ac-predictor-cn](https://greasyfork.org/zh-CN/scripts/565788-ac-predictor-cn-ez))或[镜像站链接](https://home.greasyfork.org.cn/zh-hans/info/#/zh-CN/scripts/565788/detail)，按提示操作即可。
+打开[链接](https://greasyfork.org/zh-CN/scripts/565788-ac-predictor-cn-ez)或[镜像站链接](https://home.greasyfork.org.cn/zh-hans/info/#/zh-CN/scripts/565788/detail)，按提示操作即可。
 
 #### 方法2：使用 Github 上的源码添加脚本
 
