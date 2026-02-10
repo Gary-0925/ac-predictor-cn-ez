@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name           ac-predictor-cn-ez
 // @namespace      http://ac-predictor.azurewebsites.net/
-// @version        2.0.12.1
-// @description    ac-predictor最新完美汉化版，在 AtCoder 比赛进行中进行rating变化预测，移除了准确性低下的侧栏，并进行了美化，几乎对所有内容进行了汉化
+// @version        2.0.12.3
+// @description    ac-predictor最新完美汉化版，在 AtCoder 比赛进行中进行rating变化预测，移除了准确性低下的侧栏，并进行了美化，优化了错误处理
 // @author         keymoon & Gary0
 // @license        MIT
 // @match          https://atcoder.jp/*
@@ -219,7 +219,7 @@ class ContestDetails {
         }
         else { // algo
             if (!this.ratedrange.hasValue()) {
-                throw new Error("unrated contest");
+                throw new Error("unrated比赛");
             }
             if (!this.ratedrange.contains(0)) {
                 return 0; // value is not relevant as it is never used
@@ -255,7 +255,7 @@ class ContestDetails {
         if (this.contestType == "heuristic")
             return Infinity;
         if (!this.ratedrange.hasValue()) {
-            throw new Error("unrated contest");
+            throw new Error("unrated比赛");
         }
         if (4000 <= this.ratedrange.end)
             return Infinity;
@@ -1674,6 +1674,13 @@ function isStandingsPage() {
     return /^\/contests\/[^/]*\/standings\/?$/.test(document.location.pathname);
 }
 
+const elements = document.querySelectorAll('.clearfix');
+elements.forEach((element) => {
+    element.innerHTML += `
+        <div id="ap-cn-ez-error" class="alert alert-warning text-center" style="display: none;"></div>
+    `;
+});
+
 {
     const controller = new ConfigController();
     controller.register();
@@ -1690,3 +1697,8 @@ if (isExtendedStandingsPage()) {
     const controller = new ExtendedStandingsPageController();
     controller.register();
 }
+
+window.addEventListener('unhandledrejection', event => {
+    document.getElementById("ap-cn-ez-error").innerHTML = `<p>ac-predictor-cn-ez: ${event.reason}</p>`;
+    document.getElementById("ap-cn-ez-error").style.display = "";
+});  
