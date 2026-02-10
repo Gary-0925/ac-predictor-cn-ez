@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           ac-predictor-cn-ez
 // @namespace      http://ac-predictor.azurewebsites.net/
-// @version        2.0.12.3
+// @version        2.0.12.4
 // @description    ac-predictor最新完美汉化版，在 AtCoder 比赛进行中进行rating变化预测，移除了准确性低下的侧栏，并进行了美化，优化了错误处理
 // @author         keymoon & Gary0
 // @license        MIT
@@ -771,8 +771,8 @@ function getRatedRatingElem(result) {
     if (result.oldRating != result.newRating) {
         elem.style = "display: flex; gap: 1px; justify-content: center; align-items: center;";
         elem.append(getRatingSpan(result.oldRating));
-        if (result.oldRating < result.newRating) elem.innerHTML += `<div><small class="grey">${toSignedString(result.newRating - result.oldRating)}</small><div style="transform: translateY(-35%);"><big>↗</big></div></div>`;
-        else elem.innerHTML += `<div><small class="grey">${toSignedString(result.newRating - result.oldRating)}</small><div style="transform: translateY(-35%);"><big>↘</big></div></div>`;
+        if (result.oldRating < result.newRating) elem.innerHTML += `<div><small class="grey">${toSignedString(result.newRating - result.oldRating)}</small><div style="transform: translateY(-35%);"><big class="grey">↗</big></div></div>`;
+        else elem.innerHTML += `<div><small class="grey">${toSignedString(result.newRating - result.oldRating)}</small><div style="transform: translateY(-35%);"><big class="grey">↘</big></div></div>`;
         elem.append(getRatingSpan(result.newRating));
     }
     else elem.append(getRatingSpan(result.oldRating), " ", getFadedSpan("±0"));
