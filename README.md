@@ -4,7 +4,7 @@ ac-predictor最新完美汉化版，在 AtCoder 比赛进行中进行rating变�
 
 移除了准确性低下的侧栏，并对 rating 变化箭头进行了美化，优化了错误处理，几乎对所有内容进行了汉化。
 
-如果感觉不错就给个 star 吧 QwQ
+[Github项目](https://github.com/Gary-0925/ac-predictor-cn-ez/)，如果感觉不错就给个 star 吧 QwQ
 
 感谢 [@key-moon](https://github.com/key-moon)提供[原版脚本](https://github.com/key-moon/ac-predictor)。
 
