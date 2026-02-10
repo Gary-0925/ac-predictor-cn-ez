@@ -23,7 +23,7 @@ ac-predictor最新完美汉化版，在 AtCoder 比赛进行中进行rating变�
 
 > 已经安装过篡改猴的可以跳过此步。
 
-打开官网 [https://www.tampermonkey.net/](https://www.tampermonkey.net/)，按提示操作即可。
+打开[官网](https://www.tampermonkey.net/)，按提示操作即可。
 
 注意如果是 chorme 内核的浏览器，比如 Google Chorme 或 Edge，需要选中 管理扩展 > 篡改猴 > 详细信息 > 允许用户脚本 。
 
