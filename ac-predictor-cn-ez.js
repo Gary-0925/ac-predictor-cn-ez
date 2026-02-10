@@ -769,10 +769,10 @@ function getFadedSpan(innerElements) {
 function getRatedRatingElem(result) {
     const elem = document.createElement("div");
     if (result.oldRating != result.newRating) {
-        elem.style = "display: flex; gap: 5px; justify-content: center; align-items: center;";
+        elem.style = "display: flex; gap: 1px; justify-content: center; align-items: center;";
         elem.append(getRatingSpan(result.oldRating));
-        if (result.oldRating < result.newRating) elem.innerHTML += `<div><small class="grey">${toSignedString(result.newRating - result.oldRating)}</small><div><big>↗</big></div></div>`;
-        else elem.innerHTML += `<div><small class="grey">${toSignedString(result.newRating - result.oldRating)}</small><div><big>↘</big></div></div>`;
+        if (result.oldRating < result.newRating) elem.innerHTML += `<div><small class="grey">${toSignedString(result.newRating - result.oldRating)}</small><div style="transform: translateY(-35%);"><big>↗</big></div></div>`;
+        else elem.innerHTML += `<div><small class="grey">${toSignedString(result.newRating - result.oldRating)}</small><div style="transform: translateY(-35%);"><big>↘</big></div></div>`;
         elem.append(getRatingSpan(result.newRating));
     }
     else elem.append(getRatingSpan(result.oldRating), " ", getFadedSpan("±0"));
