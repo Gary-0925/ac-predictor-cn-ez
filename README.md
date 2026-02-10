@@ -1,4 +1,4 @@
-# ac-predictor-cn-ez <sub><sub><sub>v2.0.12.3</sub></sub></sub>
+# ac-predictor-cn-ez <sub><sub><sub>v2.0.12.4</sub></sub></sub>
 
 ac-predictor最新完美汉化版，在 AtCoder 比赛进行中进行rating变化预测。
 
