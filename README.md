@@ -11,7 +11,7 @@ ac-predictor最新完美汉化版，在 AtCoder 比赛进行中进行rating变�
 ---
 ## 说明
 
-插件完全经过人工翻译，几乎插件中翻译了所有文字。**欢迎 PR 改进翻译或者[反馈]([https://github.com/GoodCoder666/ac-predictor-extension-CN/issues](https://github.com/Gary-0925/ac-predictor-cn-ez/issues))**。
+插件完全经过人工翻译，几乎插件中翻译了所有文字。**欢迎 PR 改进翻译或者[反馈](https://github.com/Gary-0925/ac-predictor-cn-ez/issues)**。
 
 个人感觉侧栏不准，而且用处不大，所以删除了侧栏。
 
