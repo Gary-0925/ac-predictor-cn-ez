@@ -35,11 +35,11 @@ ac-predictor最新完美汉化版，在 AtCoder 比赛进行中进行rating变�
 
 打开[链接]([https://greasyfork.org/zh-CN/scripts/458528-ac-predictor-cn](https://greasyfork.org/zh-CN/scripts/565788-ac-predictor-cn-ez))或[镜像站链接](https://home.greasyfork.org.cn/zh-hans/info/#/zh-CN/scripts/565788/detail)，按提示操作即可。
 
-#### 方法2：直接添加脚本
+#### 方法2：使用 Github 上的源码添加脚本
 
-打开[ac-predictor.js](./ac-predictor-cn-ez.js)并复制。
+打开[ac-predictor.js](https://github.com/Gary-0925/ac-predictor-cn-ez/ac-predictor-cn-ez.js)并复制。
 
-打开篡改猴管理面板，选择“+”，用刚复制的代码将原来的替换掉，保存即可。
+打开篡改猴管理面板，选择“+”，用刚复制的代码将默认的替换掉，保存即可。
 
 ### 3. 测试是否添加成功
 
